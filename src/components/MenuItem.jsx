@@ -1,16 +1,16 @@
-const MenuItem = () => {
+const MenuItem = ({item}) => {
   return (
     <div className="card">
       <div className="frame">
-        <img src="./" alt="" />
+        <img src={item.img} alt="" />
       </div>
       <div className="info">
           <div className="info__header">
-              <h3>Title</h3>
-              <p className="price">$15</p>
+              <h3>{item.title}</h3>
+              <p className="price">${item.price}</p>
           </div>
           <div className="info__description">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum perferendis enim culpa ut ipsa, nobis assumenda cupiditate eius quisquam veniam.</p>
+              <p>{item.desc}</p>
           </div>
       </div>
     </div>
